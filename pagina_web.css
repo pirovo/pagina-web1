@@ -2,17 +2,14 @@
            text-align: center;
            margin-bottom: 1%;
            font-size: xx-large;}
-h1 {color: rgb(14, 226, 28);}
+h1 {color: rgb(61, 196, 34);}
 #arriba {display: flex;
          padding: 1% 0% 0% 0%;
-         height: 20%;
-         background: white;
          justify-content: space-between;}
 
-#Busqueda {width: 60%;
-           height: 40%;}
+#Busqueda {width: 60%;}
 #Cuadro {border: 1px solid black;
-         height: auto;
+         height: 50%;
          display: flex;
          justify-content: end;
          align-items: center;}
@@ -41,13 +38,16 @@ th {border: 1px solid black;
 #Encima {display: flex;
          justify-content: space-around;}
 #Iz_a, #Medios_a, #Dr_a {display: flex;
-                         align-items: flex-end;}
-#Iz_a > p {margin-bottom: 1%;}
-#Medios_a > p {margin-bottom: 1%;}
-#Dr_a > p {margin-bottom: 1%;}
+                         align-items: flex-end;} 
+#Iz_a > p {margin-bottom: 1%;
+           color: rgb(61, 196, 34);}
+#Medios_a > p {margin-bottom: 1%;
+               color: rgb(61, 196, 34);}
+#Dr_a > p {margin-bottom: 1%;
+           color: rgb(61, 196, 34);}
 #Debajo {display: flex;
-         justify-content: space-around;}
-#Iz_b, #Medios_b, #Dr_b {width: 30%;
+         justify-content: space-between;}
+#Iz_b, #Medios_b, #Dr_b {width: 28%;
                          display: flex;
                          justify-content: center;
                          align-items: flex-start;}
