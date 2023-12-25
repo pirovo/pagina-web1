@@ -1,0 +1,44 @@
+#arriba {display: flex;
+         padding: 1% 0% 0% 0%;
+         background: white;
+         justify-content: space-between;}
+#Marca h1 {margin-top: 0%;}
+h1 {color: rgb(14, 226, 28);}
+#Busqueda {width: 50%;}
+#Cuadro {border: 1px solid black;
+         height: 40%;
+         display: flex;
+         justify-content: end;
+         align-items: center;}
+#Cuadro img {width: 5%;
+             padding-right: 1%;}
+#Iconos {width: 25%;}
+#Iconos1 {display: flex;
+          justify-content: space-around;
+          height: 40%;}
+
+#Iconos2 {display: flex;
+          justify-content: space-around;
+          text-align: center;}
+#Iconos p {width: 25%;
+           font-size: 50%;}
+
+table {border-collapse: collapse;
+       width: 100%;
+       text-align: center;}
+th {border: 1px solid black;
+    padding: 1%;
+    background-color: rgba(0, 255, 0, 0.813);}
+#Encima {display: flex;
+         justify-content: space-around;}
+#Iz_a, #Medios_a, #Dr_a {display: flex;
+                         align-items: flex-end;}
+#Iz_a > p {margin-bottom: 1%;}
+#Medios_a > p {margin-bottom: 1%;}
+#Dr_a > p {margin-bottom: 1%;}
+#Debajo {display: flex;
+         justify-content: space-around;}
+#Iz_b, #Medios_b, #Dr_b {width: 30%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: flex-start;}
