@@ -1,3 +1,4 @@
+
 #Marca h1 {margin-top: 0%;
            text-align: center;
            margin-bottom: 1%;
@@ -65,5 +66,13 @@ th {border: 1px solid black;
             
 #Recarga1 {text-align: center;
            color: rgb(61, 196, 34);}
-#Recarga2 {display: flex;
-           justify-content: space-around;}
+#Recarga1 > p {margin-bottom: 0%;}
+#Recarga2 {width: 100%;  /*Esto hace que ocupe el 100% del ancho y alto del contenedor*/
+           height: 100%;
+           overflow-x: scroll; /*Esto es para que aparezca la barra horizontal ya que se a indicado que debe estar en el eje x, ademas esto permite que se puedan ver las demas fotos sin que toda la pagina se desplace con ella*/
+           } 
+
+#fotos {display: flex;}
+#fotos > img {flex: 0 0 50%; /*La etiqueta es un atajo que al poner 3 parametros, se indica el crecimiento, decrecimiento y su tamaño base*/
+              box-sizing: border-box; /*Esto es para que en vez de que se calcule con el content-box, que calcula el tamaño del elemento con width y hight y despues le suma el padding y border. Use el box-sizing ya que el padding y el border pasan a formar parte del calculo del width, por lo que ya no se suman sus valores despues.*/ 
+              padding: 1% 7% 7% 7%;}
