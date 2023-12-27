@@ -35,7 +35,7 @@ table {border-collapse: collapse;
        text-align: center;}
 th {border: 1px solid black;
     padding: 1%;
-    background-color: rgba(0, 255, 0, 0.813);}
+    background-color: rgb(61, 196, 34);}
 #Encima {display: flex;
          justify-content: space-around;}
 #Iz_a, #Medios_a, #Dr_a {display: flex;
@@ -76,3 +76,8 @@ th {border: 1px solid black;
 #fotos > img {flex: 0 0 50%; /*La etiqueta es un atajo que al poner 3 parametros, se indica el crecimiento, decrecimiento y su tamaño base*/
               box-sizing: border-box; /*Esto es para que en vez de que se calcule con el content-box, que calcula el tamaño del elemento con width y hight y despues le suma el padding y border. Use el box-sizing ya que el padding y el border pasan a formar parte del calculo del width, por lo que ya no se suman sus valores despues.*/ 
               padding: 1% 7% 7% 7%;}
+#Mapa {display: flex;
+       padding: 8% 0% 0% 0%;}
+#Mapa > p {color: rgb(61, 196, 34);
+           padding-top: 7%;}
+#Mapa > img {flex: 0 0 100%;}
