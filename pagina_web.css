@@ -13,6 +13,11 @@ h1 {color: rgb(61, 196, 34);}
          display: flex;
          justify-content: end;
          align-items: center;}
+#Input {justify-content: flex-start;
+        width: 100%;
+        border: 0px;}
+#Input > input {width: 90%;
+                border: 0;}
 #Cuadro img {width: 11%;
              padding-right: 1%;}
 #Iconos {width: 37%;}
@@ -35,6 +40,8 @@ table {border-collapse: collapse;
 th {border: 1px solid black;
     padding: 1%;
     background-color: rgb(61, 196, 34);}
+
+#Exclusivo {padding-top: 6%;}
 #Encima {display: flex;
          justify-content: space-around;}
 #Iz_a, #Medios_a, #Dr_a {display: flex;
@@ -52,17 +59,25 @@ th {border: 1px solid black;
                          justify-content: center;
                          align-items: flex-start;}
 
-#Abajo {border: 2px solid black;}
+#Abajo {border-bottom: 2px solid black;
+        padding-top: 5%;}
 #abajo1 {text-align: center;
-         border: 1px solid black;
+         border-top: 2px solid black;
+         border-right: 2px solid black;
+         border-bottom: 1px solid black;
+         border-left: 2px solid black;
          background-color: rgb(61, 196, 34);}
 #abajo1 > p {margin: 2% 0% 2% 0%;
              color: white;}
 #abajo2 {display: flex;
-         justify-content: space-around;}
+         justify-content: space-around;
+         border-top: 1px solid black;
+         border-right: 2px solid black;
+         border-left: 2px solid black;}
 #abajo2 > p {margin: 2% 0% 2% 0%;
              color: rgb(61, 196, 34);}
-            
+
+#Recarga {padding-top: 5%;}
 #Recarga1 {text-align: center;
            color: rgb(61, 196, 34);}
 #Recarga1 > p {margin-bottom: 0%;}
@@ -75,8 +90,9 @@ th {border: 1px solid black;
 #fotos > img {flex: 0 0 50%; /*La etiqueta es un atajo que al poner 3 parametros, se indica el crecimiento, decrecimiento y su tamaño base*/
               box-sizing: border-box; /*Esto es para que en vez de que se calcule con el content-box, que calcula el tamaño del elemento con width y hight y despues le suma el padding y border. Use el box-sizing ya que el padding y el border pasan a formar parte del calculo del width, por lo que ya no se suman sus valores despues.*/ 
               padding: 1% 7% 7% 7%;}
-#Mapa {padding: 8% 0% 0% 0%;}
+#Mapa {padding: 5% 0% 0% 0%;}
 #Mapa1 > p {color: rgb(61, 196, 34);
-            text-align: center;}
+            text-align: center;
+            margin-bottom: 2%;}
 #Mapa2 {display: flex;}
 #Mapa2 > img {flex: 0 0 100%;}
