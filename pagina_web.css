@@ -1,3 +1,5 @@
+#body {width: 100%;}
+#Contenedor {width: 100%;}
 #Marca h1 {margin-top: 0%;
            text-align: center;
            margin-bottom: 1%;
@@ -11,28 +13,41 @@ h1 {color: rgb(61, 196, 34);}
 #Cuadro {border: 1px solid black;
          height: 50%;
          display: flex;
-         justify-content: end;
+         justify-content: space-around;
          align-items: center;}
 #Input {justify-content: flex-start;
-        width: 100%;
+        width: 85%;
+        height: 80%;
         border: 0px;}
-#Input > input {width: 90%;
+#Input > input {width: 95%;
+                height: 100%;
                 border: 0;}
-#Cuadro img {width: 11%;
+#Lupa {width: 13%;
+       height: 100%;
+       display: flex;
+       align-items: center;}
+#Lupa > img {height: 80%;
              padding-right: 1%;}
 #Iconos {width: 37%;}
 #Iconos1 {display: flex;
           justify-content: space-around;
-          height: 40%;}
-#Usuario {width: 27%;}
-#Carrito {width: 33%;}
+          height: 40%;
+          width: 100%;}
+#Iconos1_1, #Iconos1_2, #Iconos1_3 {width: 25%;
+                                    height: 100%;}
+#Iconos1_1 > img {width: auto;
+                  height: 100%;}
+#Iconos1_2 > img {width: auto;
+                  height: 100%;}
+#Iconos1_3 > img {width: auto;
+                  height: 100%;}
 
 #Iconos2 {display: flex;
           justify-content: space-around;
           text-align: center;}
-#Iconos p {width: 25%;
-           font-size: 50%;
-           margin-top: 1%;}
+#Iconos2 > p {width: 25%;
+              font-size: 50%;
+              margin-top: 1%;}
 
 table {border-collapse: collapse;
        width: 100%;
@@ -40,6 +55,8 @@ table {border-collapse: collapse;
 th {border: 1px solid black;
     padding: 1%;
     background-color: rgb(61, 196, 34);}
+th > p {font-size: 80%;
+        margin: 1% 0% 1% 0%;}
 
 #Exclusivo {padding-top: 6%;}
 #Encima {display: flex;
@@ -93,6 +110,53 @@ th {border: 1px solid black;
 #Mapa {padding: 5% 0% 0% 0%;}
 #Mapa1 > p {color: rgb(61, 196, 34);
             text-align: center;
+            margin-bottom: 2%;}
+#Mapa2 {display: flex;}
+#Mapa2 > img {flex: 0 0 100%;}
+
+@media screen and (min-width:768px) {
+       #Marca > h1 {margin-top: 0%;
+                    text-align: center;
+                    margin-bottom: 1%;
+                    font-size: 350%;}
+       
+       #Busqueda {width: 70%;}
+       #Cuadro {height: 60%;}
+
+       #Input {width: 90%;}
+       #Input > input {width: 98%;
+                       height: 100%;
+                       border: 0;
+                       font-size: 140%;}
+
+       #Lupa {width: 7%;}
+
+       #Lupa > img {height: 80%;
+                    padding-right: 0%;}
+
+       #Iconos {width: 29%;}
+       #Iconos1 {height: 50%;}
+
+       #Iconos1_1, #Iconos1_2, #Iconos1_3 {width: 22%;
+                                           height: 100%;}
+       #Iconos2 > p {width: 25%;
+                     font-size: 80%;
+                     margin-top: 1%;}
+
+       th {padding: 0%;}
+       th > p {font-size: 120%;}
+
+       #Iz_a > p {font-size: 150%;}
+       #Medios_a > p {font-size: 150%;}
+       #Dr_a > p {font-size: 150%;}
+
+       #abajo1 > p {font-size: 160%;}
+       #abajo2 > p {font-size: 160%;}
+
+       #Recarga1 > p {font-size: 160%;}
+
+       #Mapa1 > p {font-size: 160%;}
+}
             margin-bottom: 2%;}
 #Mapa2 {display: flex;}
 #Mapa2 > img {flex: 0 0 100%;}
