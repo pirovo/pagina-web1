@@ -54,9 +54,15 @@ table {border-collapse: collapse;
        text-align: center;}
 th {border: 1px solid black;
     padding: 1%;
-    background-color: rgb(61, 196, 34);}
+    background-color: rgb(61, 196, 34);
+    transition: 1s;}
 th > p {font-size: 80%;
         margin: 1% 0% 1% 0%;}
+a {text-decoration: none;
+   color: black;
+   transition: 1s;}
+th:hover {background-color: black;}
+th:hover a {color: rgb(61, 196, 34);}
 #Menu2 {display: none;}
 
 #Exclusivo {padding-top: 6%;}
@@ -132,13 +138,11 @@ th > p {font-size: 80%;
                        font-size: 140%;}
 
        #Lupa {width: 7%;}
-
        #Lupa > img {height: 80%;
                     padding-right: 0%;}
 
        #Iconos {width: 29%;}
        #Iconos1 {height: 50%;}
-
        #Iconos1_1, #Iconos1_2, #Iconos1_3 {width: 22%;
                                            height: 100%;}
        #Iconos2 > p {width: 25%;
@@ -163,19 +167,29 @@ th > p {font-size: 80%;
 }
 
 @media screen and (min-width: 1280px) {
+       #Marca > h1 {font-size: 400%;
+                    margin-bottom: 0%;}
+
+       #Busqueda {width: 78%;}
+       #Lupa {width: 5%;}
+       
+       #Iconos {width: 19%;}
+       #Iconos1 {height: 60%;}
+       #Iconos2 > p {font-size: 92%;}
+
        #Bloque {display: flex;
                 height: 43vh;
                 width: 98%;}
 
-       #Menu {display: none;}
-       #Menu2 {display: flex;
+       #Menu {display: none;} /*Para que no aparezca esta parte del html en la pagina*/
+       #Menu2 {display: flex; /*Para que aparezca esta parte del html en la pagina*/
                width: 10%;
                background: white;
                transition: 1s;}
-       #Menu2 > * {margin: 0%;
+       #Menu2 > * {margin: 0%; /* El simbolo (*) se refiere a que dentro del contenedor Menu2, todos los valores que se establezcan modificaran cada elemento que conforma este contenedor*/
                    padding: 0%;
                    box-sizing: border-box;}
-       #Menu2_2 {transition: 0.3s;
+       #Menu2_2 {transition: 0.3s; /*Se usa para establecer el tiempo que debe pasar cuando el cursor se pone encima de este contenedor, haciendo que el cambio no sea muy brusco*/
                  padding: 2% 2% 2% 0%;
                  width: 80%;}
        #Menu_Contenido {padding: 0% 0% 0% 2%;
@@ -192,26 +206,36 @@ th > p {font-size: 80%;
                                  font-family: 'Gill Sans', 'Gill Sans MT', 'calibri', 'Trebuchet MS', sans-serif;}
        .Simbolo {font-size: 200%;
                  margin-right: 1%;
-                 background: #0c0c0c;
-                 border-radius: 50%;
+                 background: black;
+                 border-radius: 50%; /*Esto redondea las esquinas del padding, haciendo que con el balor del 50%, se obtenga bordes curveados*/
                  padding: 1.5%;}
 
-       
-
-       #Menu_Contenido > li:hover {background: #0c0c0c;}
-       .Nombre {display: none;}
+       #Menu_Contenido > li:hover {background: black;}
+       .Nombre {display: none;} /*Esto hace que el contenido al que se refiere dicha clase no se muestre en la pagina*/
        #Menu2:hover {width: 20%;}
        #Menu2_2:hover {width: 100%;}
-       #Menu2_2:hover .Nombre {display: block;}
+       #Menu2_2:hover .Nombre {display: block;} /*Al poner display:block; hace que el contenido que hay en dicha clase aparezca cuando el cursor este encima del contenedor Menu2_2*/
 
        #Izquierda {transition: 1s;
                    width: 100%;}
        #Exclusivo {padding-top: 0%;}
        #Encima {height: 4vh;}
+       #Iz_a > p {font-size: 170%;}
+       #Medios_a > p {font-size: 170%;}
+       #Dr_a > p {font-size: 170%;}
 
        #Abajo {padding-top: 2%;}
+       #abajo1 > p {font-size: 180%;}
+       #abajo2 > p {font-size: 180%;}
 
-       #Mapa1 > p {margin-bottom: 1%;}
+       #Recarga1 > p {font-size: 180%;}
+
+       #fotos > img {flex: 0 0 33%; /*Al poner 33% consigo que el tamaño base de cada foto ocupe el 33% del width del contenedor Recarga2, consiguiendo que se muestren 3 fotos en vez de 2*/
+                     }
+
+
+       #Mapa1 > p {font-size: 180%;
+                   margin-bottom: 1%;}
        #Mapa2 {display: flex;
                height: 70vh;}
 }
