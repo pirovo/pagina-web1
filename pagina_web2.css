@@ -1,0 +1,158 @@
+#grib {display: grid;
+       height: 30vh;
+       padding:0%;
+       grid-template-columns: 62% 38%;
+       grid-template-rows: 17% 17% 3% 19% 10% 22% 3% 7% 50% 3% 25% 3% 25% 25%;
+       grid-template-areas: "nombre nombre"
+                            "cuadroiz cuadrodr"
+                            "espacio espacio"
+                            "menus menus"
+                            "espacio2 espacio2"
+                            "indice indice"
+                            "espacio3 espacio3"
+                            "texto texto"
+                            "producto producto"
+                            "texto1 texto1"
+                            "producto1 producto1"
+                            "texto2 texto2"
+                            "producto2 producto2"
+                            "fin fin";
+       align-items: stretch;}
+#Marca {color: rgb(61, 196, 34);
+        text-align: center;
+        grid-area: nombre;}
+#Marca > h1 {margin: 0%;}
+#Cuadro {border: 1px solid black;
+         width: 96%;
+         justify-items: center;
+         align-items: center;
+         grid-area: cuadroiz;
+         display: grid;
+         grid-template-columns: 85% 15%;
+         grid-template-rows: 100%;
+         grid-template-areas: "input img";}
+#Input {width: 96%;
+        height: 85%;
+        grid-area: input;}
+#Input > input {border: 0;
+                width: 100%;
+                height: 100%;
+                padding: 0%;}
+#Lupa {width: 90%;
+       height: 85%;
+       grid-area: img;}
+#Lupa > img {height: 100%;
+             width: 90%;}
+#Iconos {grid-area: cuadrodr;
+         display: grid;
+         grid-template-columns: 100%;
+         grid-template-rows: 80% 20%;
+         grid-template-areas: "img"
+                              "texto";}
+#Iconos1 {grid-area: img;
+          justify-items: center;
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+          grid-template-rows: 100%;
+          grid-template-areas: "img1 img2 img3";}
+#Iconos1_1 {grid-area: img1;
+            width: 60%;}
+#Iconos1_1 > img {height: 100%;
+                  width: 100%;}
+#Iconos1_2 {grid-area: img2;
+            width: 60%;}
+#Iconos1_2 > img {height: 100%;
+                  width: 100%;}
+#Iconos1_3 {grid-area: img3;
+            width: 60%;}
+#Iconos1_3 > img {height: 100%;
+                  width: 100%;}
+#Iconos2 {grid-area: texto;
+          justify-items: center;
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+          grid-template-rows: 100%;
+          grid-template-areas: "texto1 texto2 texto3";}
+#Iconos2_1 {grid-area: texto1;}
+#Iconos2_1 > p {margin: 0%;
+                font-size: 50%;}
+#Iconos2_2 {grid-area: texto2;}
+#Iconos2_2 > p {margin: 0%;
+                font-size: 50%;}
+#Iconos2_3 {grid-area: texto3;}
+#Iconos2_3 > p {margin: 0%;
+                font-size: 50%;}
+
+#Menu {grid-area: menus;}
+table {border-collapse: collapse;
+       width: 100%;
+       text-align: center;}
+th {border: 1px solid black;
+    padding: 1%;
+    background-color: rgb(61, 196, 34);
+    transition: 1s;}
+th > p {font-size: 80%;
+        margin: 1% 0% 1% 0%;}
+a {text-decoration: none;
+   color: black;
+   transition: 1s;}
+th:hover {background-color: black;}
+th:hover a {color: rgb(61, 196, 34);}
+
+#Sub_Menu {grid-area: indice;
+           border: 1px solid black;}
+h2 {background-color: rgba(109, 106, 106, 0.526);
+    margin: 0%;}
+ul {list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;}
+li {padding-top: 1%;}
+li > a {color: rgb(61, 196, 34);}
+li:hover .Primero {font-size: 130%;}
+
+#Texto {grid-area: texto;}
+h3 {color: rgb(61, 196, 34);
+    margin: 0%;}
+
+#Productos {grid-area: producto;}
+#Productos_1 {height: 100%;
+              width: 33%;}
+#Productos_1 > img {height: 100%;}
+.Nombre_Producto {margin: 0%;
+                  font-size: 75%;
+                  background-color: rgb(229, 229, 229);}
+.Valoracion {display: flex;
+             font-size: 60%;
+             background-color: rgb(229, 229, 229);}
+.Valoracion > p {margin: 0%;}
+.Precio {background-color: rgb(229, 229, 229);}
+.Precio > p {padding: 1% 0% 0% 0%;
+             margin: 0%;}
+
+
+
+
+
+/*#grib {display: grid;
+       height: 30vh;
+       padding:0%;
+       grid-template-columns: 12% 11% 11% 11% 11% 5% 17% 11% 11%;
+       grid-template-rows: 17% 17% 3% 17% 3% 10% 15% 3% 10% 15% 3% 10% 15%;
+       grid-template-areas: "nombre nombre nombre nombre nombre nombre nombre nombre nombre"
+                            "cuadroiz cuadroiz cuadroiz cuadroiz cuadroiz cuadroiz cuadrodr cuadrodr cuadrodr"
+                            "espacio espacio espacio espacio espacio espacio espacio espacio espacio"
+                            "menus menus menus menus menus menus menus menus menus"
+                            "izq texto texto texto texto texto texto texto texto"
+                            "izq producto1 producto1 producto2 producto2 producto3 producto3 producto4 producto4"
+                            "izq detalle1 detalle1 detalle2 detalle2 detalle3 detalle3 detalle4 detalle4"
+                            "izq texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1"
+                            "izq producto5 producto5 producto6 producto6 producto7 producto7 producto8 producto8"
+                            "izq detalle5 detalle5 detalle6 detalle6 detalle7 detalle7 detalle8 detalle8"
+                            "izq texto2 texto2 texto2 texto2 texto2 texto2 texto2 texto2"
+                            "izq producto9 producto9 producto10 producto10 producto11 producto11 producto12 producto12"
+                            "izq detalle9 detalle9 detalle10 detalle10 detalle11 detalle11 detalle12 detalle12";
+       align-items: stretch;}*/
+
