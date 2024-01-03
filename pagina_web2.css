@@ -2,7 +2,7 @@
        height: 30vh;
        padding:0%;
        grid-template-columns: 62% 38%;
-       grid-template-rows: 17% 17% 3% 19% 10% 24% 3% 7% 50% 3% 25% 3% 25% 25%;
+       grid-template-rows: 17% 17% 3% 19% 10% 24% 3% 7% 80% 3% 25% 3% 25% 25%;
        grid-template-areas: "nombre nombre"
                             "cuadroiz cuadrodr"
                             "espacio espacio"
@@ -119,10 +119,11 @@ h3 {color: rgb(61, 196, 34);
 
 #Productos {grid-area: producto;}
 #Productos_1 {height: 100%;
-              width: 33%;}
-#Productos_1 > img {height: 100%;}
+              width: 40%;}
+#Productos_1 > img {height: 78%;
+                    width: 100%;}
 .Nombre_Producto {margin: 0%;
-                  font-size: 75%;
+                  font-size: 88%;
                   background-color: rgb(229, 229, 229);}
 .Valoracion {display: flex;
              font-size: 60%;
