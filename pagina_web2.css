@@ -2,7 +2,7 @@
        height: 100%;
        padding:0%;
        grid-template-columns: 62% 38%;
-       grid-template-rows: 4.5% 5% 1% 6.5% 2% 7% 1% 3% 27% 2% 3% 27% 2% 3% 20% 25%;
+       grid-template-rows: 2.5% 2.5% 0.5% 3% 2% 4% 1% 1.5% 30% 1% 1.5% 30% 1% 1.5% 25% 10%;
        grid-template-areas: "nombre nombre"
                             "cuadroiz cuadrodr"
                             "espacio espacio"
@@ -119,70 +119,121 @@ li:hover .Primero {font-size: 130%;}
 h3 {color: rgb(61, 196, 34);
     margin: 0% 0% 0% 2%;}
 
-#Productos {grid-area: producto;
-            display: flex;}
+#Productos {grid-area: producto;}
+#Productos_arriba {display: flex;
+                   height: 50%;}
 #Productos_1 {height: 100%;
               width: 50%;
               margin: 0% 2% 0% 2%;}
-#Productos_1 > img {height: 70%;
-                    width: 100%;}
+
 #Productos_2 {height: 100%;
               width: 50%;
               margin: 0% 2% 0% 2%;}
-#Productos_2 > img {height: 70%;
-                    width: 100%;}
+
+#Productos_abajo {display: flex;
+                  height: 50%;
+                  padding-top: 2%;}
 #Productos_3 {height: 100%;
               width: 50%;
-              margin: 0% 2% 0% 2%;
-              }
-#Productos_3 > img {height: 70%;
-                    width: 100%;}
+              margin: 0% 2% 0% 2%;}
 
-#Productos_4 {display: none;}
+#Productos_4 {height: 100%;
+              width: 50%;
+              margin: 0% 2% 0% 2%;}
+#Nokia {display: flex;
+        justify-content: center;
+        height: 70%;}
+#Nokia > img {height: 95%;
+              width: 30%;}
+
 
 #Texto1 {grid-area: texto1;}
 
-#Productos1 {grid-area: producto1;
-            display: flex;}
-
+#Productos1 {grid-area: producto1;}
+#Productos1_arriba {display: flex;
+                    height: 50%;}
 #Productos1_1 {height: 100%;
                width: 50%;
                margin: 0% 2% 0% 2%;}
-#Productos1_1 > img {height: 70%;
-                     width: 100%;}
+
 #Productos1_2 {height: 100%;
                width: 50%;
                margin: 0% 2% 0% 2%;}
-#Productos1_2 > img {height: 70%;
-                     width: 100%;}
+#Lenovo_Tablet {display: flex;
+                justify-content: center;
+                align-items: end;
+                height: 70%;}
+#Lenovo_Tablet > img {height: 60%;
+                      width: 80%;
+                      padding-bottom: 3%;}
+
+
+#Productos1_abajo {display: flex;
+                   height: 50%;
+                   padding-top: 2%;}
 #Productos1_3 {height: 100%;
                width: 50%;
-               margin: 0% 2% 0% 2%;
-               }
-#Productos1_3 > img {height: 70%;
-                     width: 100%;}
-  
-#Productos1_4 {display: none;}
+               margin: 0% 2% 0% 2%;}
+
+#Productos1_4 {height: 100%;
+               width: 50%;
+               margin: 0% 2% 0% 2%;}
+.img {display: flex;
+      justify-content: center;
+      height: 70%;}
+.img > img {height: 95%;
+            width: 55%;}
 
 
 #Texto2 {grid-area: texto2;}
-#Productos2 {grid-area: producto2;
-             display: flex;}
-
+#Productos2 {grid-area: producto2;}
+#Productos2_arriba {display: flex;
+                    height: 45%;}
 #Productos2_1 {height: 100%;
                width: 50%;
                margin: 0% 2% 0% 2%;}
-#Productos2_1 > img {height: 70%;
-                     width: 100%;}
+#Acer {display: flex;
+       justify-content: center;
+       align-items: end;
+       height: 60%;
+       padding-bottom: 3%;}
+#Acer > img {height: 99%;
+             width: 70%;}
+
 #Productos2_2 {height: 100%;
                width: 50%;
                margin: 0% 2% 0% 2%;}
-#Productos2_2 > img {height: 70%;
-                     width: 100%;}
-#Productos2_3 {display: none;}
+#Lenovo {display: flex;
+         justify-content: center;
+         align-items: end;
+         height: 60%;
+         padding-bottom: 3%;}
+#Lenovo > img {height: 76%;
+               width: 70%;}
 
-#Productos2_4 {display: none;}
+#Productos2_abajo {display: flex;
+                   height: 50%;}
+#Productos2_3 {height: 100%;
+               width: 50%;
+               margin: 0% 2% 0% 2%;}
+#MSI {display: flex;
+      justify-content: center;
+      align-items: end;
+      height: 70%;
+      padding-bottom: 3%;}
+#MSI > img {height: 70%;
+            width: 70%;}
 
+#Productos2_4 {height: 100%;
+               width: 50%;
+               margin: 0% 2% 0% 2%;}
+#Mini_PC {display: flex;
+          justify-content: center;
+          align-items: end;
+          height: 70%;
+          padding-bottom: 3%;}
+#Mini_PC > img {height: 90%;
+                width: 70%;}
 
 .Nombre_Producto {margin: 0%;
                   font-size: 88%;
@@ -195,3 +246,57 @@ h3 {color: rgb(61, 196, 34);
          height: auto;}
 .Precio > p {padding: 1% 0% 0% 0%;
              margin: 0%;}
+
+
+#FIN {grid-area: fin;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      background-color: rgb(61, 196, 34);
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 15% 50% 20%;
+      grid-template-areas: "arriba"
+                           "medio"
+                           "abajo"
+                           "espacio";}
+#FIN_arriba {grid-area: arriba;
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;
+             height: 100%;}
+#FIN_arriba > p {margin: 0%;
+                 height: 80%;
+                 font-size: 110%;}
+#FIN_arriba > p > img {height: 60%;}
+
+#FIN_medio {grid-area: medio;
+            display: flex;
+            justify-content: center;}
+#FIN_medio {font-size: 110%;}
+#FIN_abajo {grid-area: abajo;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 30% 40%;
+            grid-template-areas: "abajo1"
+                                 "espacio"
+                                 "abajo2";}
+#FIN_abajo_1 {grid-area: abajo1;
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-rows: 60% 40%;
+              grid-template-areas: "abajo11"
+                                   "abajo12";}
+#FIN_abajo_1_1 {grid-area: abajo11;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;}
+#FIN_abajo_1_1 > p {font-size: 90%;
+                    margin: 0%;}
+#FIN_abajo_1_2 {grid-area: abajo12;
+                text-align: center;}
+#FIN_abajo_1_2 > p {font-size: 90%;
+                    margin: 0%;}
+#FIN_abajo_2 {grid-area: abajo2;
+              text-align: center;}
+#FIN_abajo_2 > p {font-size: 90%;
+                  margin: 0%;}
