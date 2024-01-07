@@ -20,10 +20,14 @@
                             "producto2 producto2"
                             "fin fin";
        align-items: stretch;}
+
+/*Nombre de la empresa*/
 #Marca {color: rgb(61, 196, 34);
         text-align: center;
         grid-area: nombre;}
 #Marca > h1 {margin: 0%;}
+
+/*Este div contiene los divs Input y Lupa, juntos conforman el cuadro de busqueda que esta siatuado en el lado izquierdo*/
 #Cuadro {border: 1px solid black;
          width: 96%;
          justify-items: center;
@@ -45,6 +49,8 @@
        grid-area: img;}
 #Lupa > img {height: 100%;
              width: 90%;}
+
+/*Este div ,contiene los divs Iconos1 y Iconos2, esta siatudo en el lado derecho del div Cuadro*/
 #Iconos {grid-area: cuadrodr;
          display: grid;
          grid-template-columns: 100%;
@@ -85,6 +91,8 @@
 #Iconos2_3 > p {margin: 0%;
                 font-size: 50%;}
 
+/*Este div ,contiene los divs Menu1 y Menu2, pero solo esta visible el Menu1 (cuadro verde formado por dos filas) en mobile y tablet;
+ y para desktop esta el Menu2, */
 #Menu {grid-area: menus;}
 table {border-collapse: collapse;
        width: 100%;
@@ -103,6 +111,7 @@ th:hover a {color: rgb(61, 196, 34);}
 
 #Menu2 {display: none;}
 
+/*Este div (Sub_Menu) forma el apartado de venta electronica*/
 #Sub_Menu {grid-area: indice;
            border: 1px solid black;}
 
@@ -119,10 +128,12 @@ li {padding-top: 1%;}
 li > a {color: rgb(61, 196, 34);}
 li:hover .Primero {font-size: 130%;}
 
+/*Este div, contiene solo la palabra "Movil"*/
 #Texto {grid-area: texto;}
 h3 {color: rgb(61, 196, 34);
     margin: 0% 0% 0% 2%;}
 
+/*Este div,contiene los divs Productos_arriba y Productos_abajo, juntos conforman los productos que se venden en el apartado de movil*/
 #Productos {grid-area: producto;}
 #Productos_arriba {display: flex;
                    height: 50%;}
@@ -150,9 +161,10 @@ h3 {color: rgb(61, 196, 34);
 #Nokia > img {height: 95%;
               width: 30%;}
 
-
+/*Este div, contiene solo la palabra "Tablet"*/
 #Texto1 {grid-area: texto1;}
 
+/*Este div,contiene los divs Productos1_arriba y Productos1_abajo, juntos conforman los productos que se venden en el apartado de tablets*/
 #Productos1 {grid-area: producto1;}
 #Productos1_arriba {display: flex;
                     height: 50%;}
@@ -188,8 +200,10 @@ h3 {color: rgb(61, 196, 34);
 .img > img {height: 95%;
             width: 55%;}
 
-
+/*Este div, contiene solo la palabra "Ordenador"*/
 #Texto2 {grid-area: texto2;}
+
+/*Este div,contiene los divs Productos2_arriba y Productos2_abajo, juntos conforman los productos que se venden en el apartado de ordenador*/
 #Productos2 {grid-area: producto2;}
 #Productos2_arriba {display: flex;
                     height: 45%;}
@@ -251,7 +265,7 @@ h3 {color: rgb(61, 196, 34);
 .Precio > p {padding: 1% 0% 0% 0%;
              margin: 0%;}
 
-
+/*Este div, contiene los divs FIN_arriba, FIN_medio y FIN_abajo, juntos conforman la parte final del html*/
 #FIN {grid-area: fin;
       height: 100%;
       display: grid;
