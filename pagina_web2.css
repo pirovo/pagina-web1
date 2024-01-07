@@ -101,10 +101,14 @@ a {text-decoration: none;
 th:hover {background-color: black;}
 th:hover a {color: rgb(61, 196, 34);}
 
+#Menu2 {display: none;}
+
 #Sub_Menu {grid-area: indice;
            border: 1px solid black;}
-h2 {background-color: rgba(109, 106, 106, 0.526);
-    margin: 0%;}
+
+h2 {margin: 0%;
+    padding-left: 1%;
+    background-color: rgb(61, 196, 34);}
 ul {list-style: none;
     margin: 0%;
     padding: 0%;
@@ -254,7 +258,7 @@ h3 {color: rgb(61, 196, 34);
       align-items: center;
       background-color: rgb(61, 196, 34);
       grid-template-columns: 100%;
-      grid-template-rows: 15% 15% 50% 20%;
+      grid-template-rows: 15% 15% 50% 18%;
       grid-template-areas: "arriba"
                            "medio"
                            "abajo"
@@ -270,9 +274,10 @@ h3 {color: rgb(61, 196, 34);
 #FIN_arriba > p > img {height: 60%;}
 
 #FIN_medio {grid-area: medio;
-            display: flex;
-            justify-content: center;}
-#FIN_medio {font-size: 110%;}
+            text-align: center;}
+#FIN_medio > p {
+                font-size: 110%;
+                margin: 0%;}
 #FIN_abajo {grid-area: abajo;
             display: grid;
             grid-template-columns: 100%;
@@ -300,3 +305,325 @@ h3 {color: rgb(61, 196, 34);
               text-align: center;}
 #FIN_abajo_2 > p {font-size: 90%;
                   margin: 0%;}
+
+
+/*Pertenece al div que contine tanto al formulario como a la "X"*/
+.formula {position: fixed; /*Este valor (fixed) permite que el div siempre este en la pantalla por mucho escroll que lo hagas, ademas que una de sus propiedades es que deja de ocupar espacio en el html, es decir, es como si se sobreponiera.*/
+          bottom: 0; /*Este valor hace que comience por la parte inferior de la pantalla*/
+          left: 0;
+          right: 0; /*Tanto el valor puesto de left como right, hace lo mismo que el bottom pero esta vez a los costados*/
+          background-color: rgb(61, 196, 34);
+          transition: all 0.3s ease; /*El "transition" lo hace animable. El "all" se refiere a que todo se modifica, no es muy recomendable usarlo ya que coonsume mucho recursos. El ultimo valor es la curva de aceleracion que tendra la animacion, en este caso el uso del "easer" indica que primero la animacion ira lento y luego rapido aunque no es apreciable al poco tiempo que se dio a la animacion pero queria pponerlo para tenerlo de referencia a futuros trabajos*/
+          visibility: hidden;} /*Esto es para que se "esconda", es decir, que no se vea.*/
+.formula:target {opacity: 1; /*Este valor se complementa con el de abajo, ya que al tener valor 1 de opacidad, permite que se vea. Si no se establece, entonces tendria valor 0 lo que lo haria transparente, inpidiendo verlo por mucho que se ponga el valor de abajo*/
+                 visibility: visible; /*Esto hace posible que se vea el div del formulario, por lo tanto sea visible el formulario cuando se da a la foto del producto*/}
+
+
+/*Pertenece al div que contiene al formulario*/
+.formula1 {display: flex;
+           justify-content: center;
+           align-items: center;
+           height: auto;}
+
+
+/*El div que incluye la "X" en el formulario*/
+#X {margin: 1% 0% 2% 3%;}
+
+
+/*Pertenece al form del formulario*/
+.forma {background-color: rgb(61, 196, 34);
+        padding: 0px 3% 3% 3%; 
+        border-radius: 5px; /*Esto hace que las esquinas ya no acaben en punta, sino que se vaya redondeando mas o menos dependiendo del valor que se ponga*/
+        width: 100%;}
+
+
+/*Este se refiere al fondo de cada fieldset del formulario*/
+.fondo {background-color: white;
+        margin-bottom: 1% ;}
+.fondo > p {margin: 1% 0% 1% 0%;}
+
+
+/*Este se refiere al fondo de cada legend del formulario*/
+.fondo1 {background-color: white;
+         border: 1px solid black;}
+
+
+/*Este pertenece a la clase que tiene el div padre/ el que tiene id="grib"*/
+.aparecer:target {visibility: visible;} /*Esto provoca que cuando se haga click a la "X" , que esta dentro de un enlace, haga visible el div class:grib consiguiendo el efecto de que se esconde el formulario. Dicho div contiene todo el html de la pagina*/
+
+#Recogida {width: 52%;}
+
+@media screen and (min-width:768px) {
+       #grib {display: grid;
+              height: 100%;
+              padding:0%;
+              grid-template-columns: 71% 29%;
+              grid-template-rows: 3% 2.5% 0.5% 3% 1% 4% 1% 1.5% 30% 1% 1.5% 30% 1% 1.5% 25% 10%;
+              grid-template-areas: "nombre nombre"
+                                   "cuadroiz cuadrodr"
+                                   "espacio espacio"
+                                   "menus menus"
+                                   "espacio2 espacio2"
+                                   "indice indice"
+                                   "espacio3 espacio3"
+                                   "texto texto"
+                                   "producto producto"
+                                   "espacio4 espacio4"
+                                   "texto1 texto1"
+                                   "producto1 producto1"
+                                   "espacio5 espacio5"
+                                   "texto2 texto2"
+                                   "producto2 producto2"
+                                   "fin fin";}
+       
+       #Marca > h1 {margin: 0%;
+                    font-size: 350%;}
+
+       #Cuadro {border: 1px solid black;
+                width: 100%;
+                justify-items: center;
+                align-items: center;
+                grid-area: cuadroiz;
+                display: grid;
+                grid-template-columns: 92% 8%;
+                grid-template-rows: 100%;
+                grid-template-areas: "input img";}
+       #Input > input {font-size: 140%;}
+
+       #Iconos2_1 > p {margin: 0%;
+                       font-size: 80%;}
+       #Iconos2_2 > p {margin: 0%;
+                       font-size: 80%;}
+       #Iconos2_3 > p {margin: 0%;
+                       font-size: 80%;}
+
+       th {padding: 0%;}
+       th > p {font-size: 120%;}
+       
+
+       h2 {font-size: 170%;}
+       ul {padding: 1% 0% 0% 0%;
+           align-items: center;}
+       
+       li > a {font-size: 150%;}
+       li:hover .Primero {font-size: 170%;}
+
+       #Texto {font-size: 150%;}
+       #Texto1 {font-size: 150%;}
+       #Texto2 {font-size: 150%;}
+
+       .Nombre_Producto {font-size: 150%;}
+       .Valoracion {font-size: 112%;}
+       .Precio > p {font-size: 180%;}
+
+
+       #FIN {grid-area: fin;
+              height: 100%;
+              display: grid;
+              align-items: center;
+              background-color: rgb(61, 196, 34);
+              grid-template-columns: 100%;
+              grid-template-rows: 6% 15% 15% 50% 14%;
+              grid-template-areas: "espacio1"
+                                   "arriba"
+                                   "medio"
+                                   "abajo"
+                                   "espacio2";}
+
+       #FIN_arriba > p {font-size: 140%;}
+        
+       #FIN_medio > p {font-size: 140%;}
+
+       #FIN_abajo {grid-area: abajo;
+                   display: grid;
+                   grid-template-columns: 100%;
+                   grid-template-rows: 80% 30% 40%;
+                   grid-template-areas: "abajo1"
+                                        "espacio"
+                                        "abajo2";}
+
+       #FIN_abajo_1_1 > p {font-size: 120%;}
+       #FIN_abajo_1_2 > p {font-size: 120%;}
+       #FIN_abajo_2 > p {font-size: 120%;}
+
+
+       #Recogida {width: 27%;}
+       }
+
+@media screen and (min-width: 1280px) {
+
+       #grib {display: grid;
+              height: 100%;
+              padding:0%;
+              grid-template-columns: 77% 23%;
+              grid-template-rows: 4.5% 4% 0.5% 5% 1.2% 6.5% 1% 3% 17% 2% 3% 18% 2.5% 3% 17% 15%;
+              grid-template-areas: "nombre nombre"
+                                   "cuadroiz cuadrodr"
+                                   "espacio espacio"
+                                   "menus menus"
+                                   "espacio2 espacio2"
+                                   "indice indice"
+                                   "espacio3 espacio3"
+                                   "texto texto"
+                                   "producto producto"
+                                   "espacio4 espacio4"
+                                   "texto1 texto1"
+                                   "producto1 producto1"
+                                   "espacio5 espacio5"
+                                   "texto2 texto2"
+                                   "producto2 producto2"
+                                   "fin fin";
+              align-items: stretch;}
+
+       #Marca > h1 {font-size: 400%;}
+
+       #Cuadro {border: 1px solid black;
+                       width: 98%;
+                       height: 80%;
+                       justify-items: center;
+                       align-items: center;
+                       grid-area: cuadroiz;
+                       display: grid;
+                       grid-template-columns: 94% 6%;
+                       grid-template-rows: 100%;
+                       grid-template-areas: "input img";}
+       #Input {width: 96%;
+                      height: 85%;
+                      grid-area: input;}
+              
+       #Iconos2_1 > p {margin: 0%;
+                            font-size: 92%;}
+       #Iconos2_2 > p {margin: 0%;
+                            font-size: 92%;}
+       #Iconos2_3 > p {margin: 0%;
+                            font-size: 92%;}
+       
+       #Menu1 {display: none;}
+       #Menu2 {display: flex; /*Para que aparezca esta parte del html en la pagina*/
+               width: 100%;
+               transition: 1s;}
+       #Menu2 > * {margin: 0%; /* El simbolo (*) se refiere a que dentro del contenedor Menu2, todos los valores que se establezcan modificaran cada elemento que conforma este contenedor*/
+                   padding: 0%;
+                   box-sizing: border-box;}
+       #Menu2_2 {transition: 2s; /*Se usa para establecer el tiempo que debe pasar desde que el cursor se pone encima hasta que llegue al lugar indicado, haciendo que el cambio no sea muy brusco*/
+                 padding: 1% 0% 2% 0%;
+                 width: 90%;}
+       #Menu_Contenido {padding: 0% 0% 0% 0%;
+                        margin: 0%;}
+       #Menu_Contenido > li {list-style: none;
+                             border-radius: 0px 50px 50px 0px;
+                             transition: 0.3s;
+                             padding-top: 0%;}
+
+       /*Es para que el backgroud del li, se adapte al tamaño que ocupa cada li, es decir, para que ni ocupe menos o mas respecto a la longitud.*/
+       #Tamaño:hover {width: 11%;}
+       #Tamaño2:hover {width: 16%;}
+       #Tamaño3:hover {width: 14%;}
+       #Tamaño4:hover {width: 15%;}
+       #Tamaño5:hover {width: 14%;}
+       #Tamaño6:hover {width: 13%;}
+       #Tamaño7:hover {width: 12%;}
+
+
+       #Menu_Contenido > li > a {text-decoration: none;
+                                 color: rgb(61, 196, 34);
+                                 display: flex;
+                                 align-items: center;
+                                 font-family: 'Gill Sans', 'Gill Sans MT', 'calibri', 'Trebuchet MS', sans-serif;
+                                 width: 100%;}
+       .Simbolo {font-size: 200%;
+                 margin-right: 1%;
+                 background: black;
+                 border-radius: 50%; /*Esto redondea las esquinas del padding, haciendo que con el balor del 50%, se obtenga bordes curveados*/
+                 padding: 1.5%;}
+       .Nombre {width: 100%;}
+
+       #Menu_Contenido > li:hover {background: black;}
+       .Nombre {display: none;} /*Esto hace que el contenido al que se refiere dicha clase no se muestre en la pagina*/
+       #Menu2:hover {width: 100%;}
+       #Menu2_2:hover {width: 100%;}
+       #Menu2_2:hover .Nombre {display: block;} /*Al poner display:block; hace que el contenido que hay en dicha clase aparezca cuando el cursor este encima del contenedor Menu2_2*/
+
+
+       h2 {font-size: 220%;}
+       #Sub_Menu > ul {padding: 1% 0% 0% 0%;
+                       align-items: center;}
+       .Electronica {padding-top: 0%;}
+       .Electronica > a {font-size: 190%;}
+       .Electronica:hover .Primero {font-size: 210%;}
+
+       /*Se refiere al div que ocupa la fila del grid (texto), y que dentro del div esta solo la palabra "Movil"*/
+       #Texto {font-size: 210%;}
+
+
+       #Productos {display: flex;}
+       #Productos_arriba {display: flex;
+                          width: 50%;
+                          height: 100%;}
+       #Productos_1 {height: 100%;
+                     width: 50%;
+                     margin: 0% 2% 0% 2%;}
+       #Productos_2 {height: 100%;
+                     width: 50%;
+                     margin: 0% 2% 0% 2%;}
+       #Productos_abajo {display: flex;
+                         width: 50%;
+                         height: 100%;
+                         padding-top: 0%;}
+       #Productos_3 {height: 100%;
+                     width: 50%;
+                     margin: 0% 2% 0% 2%;}
+       #Productos_4 {height: 100%;
+                     width: 50%;
+                     margin: 0% 2% 0% 2%;}
+
+       #Texto1 {font-size: 210%;}
+       
+
+       #Productos1 {display: flex;}
+       #Productos1_arriba {width: 50%;
+                           height: 100%;}
+       #Productos1_1 {height: 100%;
+                      width: 50%;
+                      margin: 0% 2% 0% 2%;}
+       #Productos1_2 {height: 100%;
+                      width: 50%;
+                      margin: 0% 2% 0% 2%;}
+       #Productos1_abajo {width: 50%;
+                          height: 100%;
+                          padding-top: 0%;}
+       #Productos1_3 {height: 100%;
+                      width: 50%;
+                      margin: 0% 2% 0% 2%;}
+       #Productos1_4 {height: 100%;
+                      width: 50%;
+                      margin: 0% 2% 0% 2%;}
+
+       #Texto2 {font-size: 210%;}
+
+       #Productos2 {display: flex;}
+       #Productos2_arriba {width: 50%;
+                           height: 100%;}
+       
+       #Acer > img {height: 80%;}
+       
+       #Productos2_abajo {width: 50%;
+                          height: 100%;}
+
+       #MSI {height: 60%;}
+       #Mini_PC {height: 60%;}
+       #Mini_PC > img {height: 100%;}
+
+
+       #FIN_abajo_1 {grid-area: abajo1;
+                     display: flex;}
+       #FIN_abajo_1_1 {width: 80%;
+                       justify-content: space-around;}
+       #FIN_abajo_1_1 > p {font-size: 120%;}
+
+       #FIN_abajo_1_2 {padding-top: 0.6%;
+                       width: 30%;}
+       #FIN_abajo_1_2 > p {font-size: 120%;}
+
+       #Recogida {width: 16%;}
+       }
