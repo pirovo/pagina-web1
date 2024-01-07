@@ -1,15 +1,25 @@
 #body {width: 100%;}
+
+/*Contiene todo el html de la pagina*/
 #Contenedor {width: 100%;}
+
+/*Nombre de la empresa*/
 #Marca h1 {margin-top: 0%;
            text-align: center;
            margin-bottom: 1%;
            font-size: xx-large;}
+
 h1 {color: rgb(61, 196, 34);}
+
+/*Contenedor del cuadro de busqueda y de los iconos*/
 #arriba {display: flex;
          padding: 1% 0% 0% 0%;
-         justify-content: space-between;}
+         justify-content: space-between;
+         height: 60%;}
 
-#Busqueda {width: 60%;}
+/*Div que contiene el cuadro de busqueda y la img de la lupa*/
+#Busqueda {width: 60%;
+           height: 100%;}
 #Cuadro {border: 1px solid black;
          height: 50%;
          display: flex;
@@ -28,6 +38,8 @@ h1 {color: rgb(61, 196, 34);}
        align-items: center;}
 #Lupa > img {height: 80%;
              padding-right: 1%;}
+
+/*Div que contiene los iconos (imagen y el nombre abajo)*/
 #Iconos {width: 37%;}
 #Iconos1 {display: flex;
           justify-content: space-around;
@@ -49,6 +61,7 @@ h1 {color: rgb(61, 196, 34);}
               font-size: 50%;
               margin-top: 1%;}
 
+/*Son las partes de la tabla que conforma el menu, que es el recudro verde.*/
 table {border-collapse: collapse;
        width: 100%;
        text-align: center;}
@@ -63,8 +76,11 @@ a {text-decoration: none;
    transition: 1s;}
 th:hover {background-color: black;}
 th:hover a {color: rgb(61, 196, 34);}
+
+/*Menu que solo sera visible para desktop*/
 #Menu2 {display: none;}
 
+/*Pertenece al div Izquierda, dentro del div Exclusivo estan tres palabras y debajo de cada una de ellas la imagen*/
 #Exclusivo {padding-top: 6%;}
 #Encima {display: flex;
          justify-content: space-around;}
@@ -83,6 +99,7 @@ th:hover a {color: rgb(61, 196, 34);}
                          justify-content: center;
                          align-items: flex-start;}
 
+/*Este div contiene los divs abajo1 y abajo2, que juntos conforman el apartado de recogida de paquetes*/
 #Abajo {border-bottom: 2px solid black;
         padding-top: 5%;}
 #abajo1 {text-align: center;
@@ -101,6 +118,7 @@ th:hover a {color: rgb(61, 196, 34);}
 #abajo2 > p {margin: 2% 0% 2% 0%;
              color: rgb(61, 196, 34);}
 
+/*Este div contiene los divs Recarga1 y Recarga2, que juntos conforman el apartado de con que marcas se trabajan para la recarga*/
 #Recarga {padding-top: 5%;}
 #Recarga1 {text-align: center;
            color: rgb(61, 196, 34);}
@@ -114,6 +132,8 @@ th:hover a {color: rgb(61, 196, 34);}
 #fotos > img {flex: 0 0 50%; /*La etiqueta es un atajo que al poner 3 parametros, se indica el crecimiento, decrecimiento y su tamaño base*/
               box-sizing: border-box; /*Esto es para que en vez de que se calcule con el content-box, que calcula el tamaño del elemento con width y hight y despues le suma el padding y border. Use el box-sizing ya que el padding y el border pasan a formar parte del calculo del width, por lo que ya no se suman sus valores despues.*/ 
               padding: 1% 7% 7% 7%;}
+
+/*Este div incluye los divs Mapa1 y Mapa2, juntos conforman el apartado de donde se puede encontrar la tienda, es decir, su direccion*/
 #Mapa {padding: 5% 0% 0% 0%;}
 #Mapa1 > p {color: rgb(61, 196, 34);
             text-align: center;
@@ -189,7 +209,7 @@ th:hover a {color: rgb(61, 196, 34);}
        #Menu2 > * {margin: 0%; /* El simbolo (*) se refiere a que dentro del contenedor Menu2, todos los valores que se establezcan modificaran cada elemento que conforma este contenedor*/
                    padding: 0%;
                    box-sizing: border-box;}
-       #Menu2_2 {transition: 0.3s; /*Se usa para establecer el tiempo que debe pasar cuando el cursor se pone encima de este contenedor, haciendo que el cambio no sea muy brusco*/
+       #Menu2_2 {transition: 0.3s; /*Se usa para establecer el tiempo que debe pasar desde que el cursor se pone encima hasta que llegue al lugar indicado, haciendo que el cambio no sea muy brusco*/
                  padding: 2% 2% 2% 0%;
                  width: 80%;}
        #Menu_Contenido {padding: 0% 0% 0% 2%;
